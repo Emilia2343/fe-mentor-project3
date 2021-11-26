@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <style>
+
+    body{
+      background-color: hsl(217, 54%, 11%);
+    }
+
+
+    .card{
+      position: absolute;
+      left: 0%;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      width: 350px;
+      height: fit-content;
+      border-radius: 8%;
+      background-color: hsl(216, 50%, 16%);
+    }
+    .card-content{
+      padding: 20px;
+    }
+
+    /* card styling */
+    .photo{
+      padding: 25px;
+      align-items: center;
+      width: 100%;
+      height: auto;
+      border-radius: 12%;
+      margin: 0;
+      box-sizing: border-box;
+      
+      
+    }
+
+    .title{
+      color: white;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: 500;
+      
+    }
+
+    .title-p{
+      color: hsla(215, 52%, 70%, 0.493);
+      font-family: sans-serif;
+      font-weight: 100;
+      font-size: 15px;
+    }
+
+    .clocks{
+      display: flex;
+      box-sizing: border-box;
+      padding-bottom: 10px;
+      border-bottom: 2px solid hsla(215, 52%, 70%, 0.322);
+    }
+
+    .row:nth-child(1){
+      width: 1px;
+      height: auto;
+      padding-right: 15px;
+      
+    }
+    .row:nth-child(2){
+      color: hsl(178, 100%, 50%);
+      font-size: 15px;
+      padding-right: 130px;
+    }
+
+    .row:nth-child(3){
+      padding-right: 2px;
+    }
+
+    .row:nth-child(4){
+      color: hsl(215, 51%, 70%);
+      text-align: right;
+    }
+
+    /*  card content styling*/
+
+    .card-footer{
+      display: flex;
+    }
+    
+
+    .row-two:nth-child(1){
+      width: 25px;
+      height: 25px;
+      border: 1px solid white;
+      border-radius: 50%;
+      margin-top: 10px;
+    }
+
+    .row-two:nth-child(2){
+      padding-left: 10px;
+      color: hsl(215, 51%, 70%);
+      font-family: sans-serif;
+      font-weight: 100;
+    }
+
+    .avatars-name{
+      padding-left: 5px;
+      color: white;
+      font-family: sans-serif;
+      font-weight: 100;
+    }
+
+    /* card footer styling */
+
+    .attribution { font-size: 11px; text-align: center; color: hsla(215, 52%, 70%, 0.657); margin-top: 100px; }
+    .attribution a { color: white; font-family: sans-serif; font-size: 100;}
+  </style>
+</head>
+<body>
+
+  <div class="container">
+      
+     <div class="card">
+            <img src="images/image-equilibrium.jpg" alt="header-photo" class="photo">
+      <div class="card-content">
+        
+        <div class="title">Equilibrium #3429</div>
+           <p class="title-p">Our Equilibrium collection promotes balance and calm.</p>
+
+             <div class="clocks">
+                <div class="row"><img src="images/icon-ethereum.svg" alt="icon-ethereum" class="eth"></div>
+                <div class="row">0.041 ETH</div>
+                <div class="row"><img src="images/icon-clock.svg" alt="icon-clock" class="clock"></div>
+                <div class="row">3 days left</div>
+
+            </div>  
+              
+          <div class="card-footer">
+                  <img src="images/image-avatar.png" alt="image-avatar" class="avatar row-two">
+                  <p class="footer-p row-two">Creation of <p class="avatars-name"> Jules Wyvern</p></p>
+          </div> 
+                
+            
+      </div>
+
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Emilia Kichukova</a>.
+    </div>
+
+  </div>
+
+
+</body>
+</html>
